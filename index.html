@@ -1,0 +1,1045 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Integrales CPU</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="background"></div>
+
+    <nav class="navbar">
+      <div class="logo">IntegralesCPU</div>
+
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+
+        <li><a href="#proyecto">Proyecto</a></li>
+
+        <li><a href="#caracteristicas">Características</a></li>
+
+        <li><a href="#descargas">Descargas</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <h1>ANÁLISIS Y OPTIMIZACIÓN DEL CPU MEDIANTE INTEGRALES</h1>
+
+        <p>
+          Proyecto desarrollado en Python para monitorear el uso del CPU en
+          tiempo real utilizando integración numérica, gráficas dinámicas y la
+          regla del trapecio.
+        </p>
+
+        <div class="hero-buttons">
+          <a
+            href="./files/analisis_cpu_integrales.zip"
+            download="analisis_cpu_integrales.zip"
+            class="btn-primary"
+          >
+            Descargar Proyecto
+          </a>
+
+          <a
+            href="./files/extras.zip"
+            download="extras.zip"
+            class="btn-secondary"
+          >
+            Descargar Extras
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-dashboard">
+        <div class="dashboard">
+          <div class="dashboard-top">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+
+          <div class="dashboard-body">
+            <div class="stat-box">
+              <h3>CPU ACTUAL</h3>
+
+              <span id="cpuValue">0.0%</span>
+            </div>
+
+            <div class="stat-box">
+              <h3>INTEGRAL</h3>
+
+              <span id="integralValue">23.4</span>
+            </div>
+
+            <div class="graph-area">
+              <div class="graph-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- AGREGA ESTO DESPUÉS DE LA SECCIÓN HERO -->
+
+    <section class="stats-section">
+      <div class="stats-container">
+        <div class="stats-left">
+          <span class="mini-title">MONITOREO INTELIGENTE</span>
+
+          <h2>
+            Análisis matemático y computacional del rendimiento del CPU en
+            tiempo real
+          </h2>
+
+          <p>
+            El proyecto implementa integrales numéricas mediante la regla del
+            trapecio para calcular la carga acumulada del procesador utilizando
+            datos reales obtenidos directamente del sistema operativo.
+          </p>
+
+          <div class="stats-info">
+            <div class="info-box">
+              <h3>100s</h3>
+              <span>Tiempo de análisis</span>
+            </div>
+
+            <div class="info-box">
+              <h3>Python</h3>
+              <span>Lenguaje utilizado</span>
+            </div>
+
+            <div class="info-box">
+              <h3>NumPy</h3>
+              <span>Integración numérica</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-right">
+          <div class="live-monitor">
+            <div class="monitor-header">
+              <span class="live-dot"></span>
+              <p>LIVE SYSTEM MONITOR</p>
+            </div>
+
+            <div class="monitor-grid">
+              <div class="monitor-card">
+                <h4>CPU ACTUAL</h4>
+                <span id="cpuCurrent">0.0%</span>
+              </div>
+
+              <div class="monitor-card">
+                <h4>PROMEDIO</h4>
+                <span id="cpuAverage">1.1%</span>
+              </div>
+
+              <div class="monitor-card">
+                <h4>MÁXIMO</h4>
+                <span id="cpuMax">5.8%</span>
+              </div>
+
+              <div class="monitor-card">
+                <h4>INTEGRAL</h4>
+                <span id="cpuIntegral">23.4</span>
+              </div>
+            </div>
+
+            <div class="monitor-bars">
+              <div class="bar">
+                <span>CPU</span>
+                <div class="progress">
+                  <div class="progress-fill cpu-fill"></div>
+                </div>
+              </div>
+
+              <div class="bar">
+                <span>RAM</span>
+                <div class="progress">
+                  <div class="progress-fill ram-fill"></div>
+                </div>
+              </div>
+
+              <div class="bar">
+                <span>SISTEMA</span>
+                <div class="progress">
+                  <div class="progress-fill system-fill"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGREGA ESTO DESPUÉS DE FEATURES -->
+
+    <section class="timeline-section">
+      <div class="title">
+        <h2>Funcionamiento del Sistema</h2>
+
+        <p>
+          Flujo de ejecución del programa de monitoreo y análisis matemático del
+          procesador.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-number">01</div>
+
+          <div class="timeline-content">
+            <h3>Obtención de Datos</h3>
+
+            <p>
+              El sistema utiliza psutil para capturar el porcentaje de uso del
+              CPU segundo por segundo en tiempo real.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-number">02</div>
+
+          <div class="timeline-content">
+            <h3>Almacenamiento</h3>
+
+            <p>
+              Los datos se almacenan en arreglos utilizando NumPy para permitir
+              el análisis matemático posterior.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-number">03</div>
+
+          <div class="timeline-content">
+            <h3>Regla del Trapecio</h3>
+
+            <p>
+              numpy.trapezoid() calcula el área bajo la curva del comportamiento
+              del CPU.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-number">04</div>
+
+          <div class="timeline-content">
+            <h3>Visualización</h3>
+
+            <p>
+              El dashboard muestra gráficas, métricas y análisis del rendimiento
+              global del sistema.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tech-section">
+      <div class="title">
+        <h2>Tecnologías Utilizadas</h2>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-icon">Py</div>
+          <h3>Python</h3>
+          <p>
+            Lenguaje principal utilizado para el desarrollo completo del
+            sistema.
+          </p>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon">Np</div>
+          <h3>NumPy</h3>
+          <p>
+            Librería matemática utilizada para integración numérica y análisis
+            de datos.
+          </p>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon">Mt</div>
+          <h3>Matplotlib</h3>
+          <p>
+            Herramienta encargada de generar las gráficas del comportamiento del
+            CPU.
+          </p>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon">Ps</div>
+          <h3>Psutil</h3>
+          <p>
+            Librería utilizada para obtener métricas reales del computador en
+            tiempo real.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="execution-section">
+      <div class="execution-container">
+        <div class="execution-left">
+          <span class="execution-mini-title">
+            FUNCIONAMIENTO DEL PROGRAMA
+          </span>
+
+          <h2>
+            El sistema obtiene datos reales del computador y calcula la integral
+            automáticamente
+          </h2>
+
+          <p>
+            El proyecto captura el porcentaje de uso del CPU cada segundo
+            utilizando psutil. Luego, NumPy aplica la regla del trapecio
+            mediante numpy.trapezoid() para calcular el área bajo la curva del
+            comportamiento del procesador.
+          </p>
+
+          <div class="execution-list">
+            <div class="execution-item">
+              <span></span>
+              <p>Obtención de datos reales del sistema operativo.</p>
+            </div>
+
+            <div class="execution-item">
+              <span></span>
+              <p>Monitoreo continuo del uso del CPU.</p>
+            </div>
+
+            <div class="execution-item">
+              <span></span>
+              <p>Cálculo automático de la integral acumulada.</p>
+            </div>
+
+            <div class="execution-item">
+              <span></span>
+              <p>Detección de carga baja, media, alta o extrema.</p>
+            </div>
+
+            <div class="execution-item">
+              <span></span>
+              <p>Visualización gráfica del comportamiento del sistema.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="execution-right">
+          <div class="terminal-box">
+            <div class="terminal-top">
+              <div class="terminal-dot red"></div>
+              <div class="terminal-dot yellow"></div>
+              <div class="terminal-dot green"></div>
+            </div>
+
+            <div class="terminal-body">
+              <p>
+                C:\Users\Desktop\IntegralesCPU> pip install numpy matplotlib
+                psutil
+              </p>
+
+              <p>Successfully installed numpy matplotlib psutil</p>
+
+              <br />
+
+              <p>
+                C:\Users\Desktop\IntegralesCPU> python
+                analisis_cpu_integrales.py
+              </p>
+
+              <br />
+
+              <p>Tiempo 0s | CPU 0.8% | Estado: BAJO</p>
+
+              <p>Tiempo 1s | CPU 5.8% | Estado: BAJO</p>
+
+              <p>Tiempo 2s | CPU 2.1% | Estado: BAJO</p>
+
+              <br />
+
+              <p>===== ANÁLISIS FINAL =====</p>
+
+              <p>Integral Total: 23.4</p>
+
+              <p>Promedio CPU: 1.1%</p>
+
+              <p>Máximo CPU: 5.8%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="integral-section" id="integrales">
+      <div class="title">
+        <h2>Importancia de las Integrales</h2>
+
+        <p>
+          El proyecto utiliza integrales para calcular la carga acumulada del
+          CPU durante un intervalo de tiempo determinado, permitiendo analizar
+          el comportamiento global del sistema y no únicamente valores
+          instantáneos.
+        </p>
+      </div>
+
+      <div class="integral-grid">
+        <div class="integral-card">
+          <div class="integral-icon">
+            <img src="resources/img/integral.png" alt="Integral" />
+          </div>
+
+          <h3>¿Qué representa la integral?</h3>
+
+          <p>
+            La integral calcula el área bajo la curva generada por el porcentaje
+            de uso del CPU a lo largo del tiempo. Gracias a esto, el sistema
+            puede determinar cuánto trabajó realmente el procesador durante todo
+            el análisis.
+          </p>
+
+          <div class="formula-box">∫ f(t) dt</div>
+        </div>
+
+        <div class="integral-card">
+          <div class="integral-icon">
+            <img src="resources/img/cpu.png" alt="CPU" />
+          </div>
+
+          <h3>Análisis Global del CPU</h3>
+
+          <p>
+            Observar únicamente valores instantáneos como 20% o 80% no permite
+            entender completamente el rendimiento del sistema. La integral
+            permite analizar la carga acumulada total del procesador.
+          </p>
+
+          <div class="stats-example">
+            <span>CPU Máximo: 5.8%</span>
+            <span>Promedio: 1.1%</span>
+            <span>Integral: 23.4</span>
+          </div>
+        </div>
+
+        <div class="integral-card">
+          <div class="integral-icon">
+            <img src="resources/img/chart.png" alt="Chart" />
+          </div>
+
+          <h3>Área Bajo la Curva</h3>
+
+          <p>
+            Cada segundo registrado por el sistema genera un punto en la
+            gráfica. La integral suma todas las pequeñas áreas entre los puntos
+            para aproximar el comportamiento total del CPU.
+          </p>
+
+          <div class="mini-graph">
+            <div class="mini-line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trapezoid-section" id="trapezoide">
+      <div class="title">
+        <h2>Funcionamiento de numpy.trapezoid()</h2>
+
+        <p>
+          El sistema utiliza integración numérica mediante la regla del trapecio
+          usando la función numpy.trapezoid(), la cual permite aproximar
+          integrales utilizando datos reales obtenidos segundo por segundo.
+        </p>
+      </div>
+
+      <div class="trapezoid-container">
+        <div class="trap-card">
+          <h3>¿Por qué se utiliza?</h3>
+
+          <p>
+            El computador no genera una función matemática continua perfecta,
+            sino datos discretos reales como:
+          </p>
+
+          <div class="code-block">
+            Tiempo 0s → CPU 0.8% <br />
+            Tiempo 1s → CPU 5.8% <br />
+            Tiempo 2s → CPU 2.1% <br />
+            Tiempo 3s → CPU 0.6%
+          </div>
+
+          <p>
+            Debido a esto, no es posible resolver una integral tradicional
+            exacta. Por esta razón se utiliza el método del trapecio.
+          </p>
+        </div>
+
+        <div class="trap-card">
+          <h3>¿Cómo funciona?</h3>
+
+          <p>
+            numpy.trapezoid() conecta cada punto de la gráfica utilizando líneas
+            rectas y forma pequeños trapecios entre ellos. Luego suma todas las
+            áreas para aproximar la integral total.
+          </p>
+
+          <div class="formula-box">A = ((B + b) × h) / 2</div>
+
+          <ul class="trap-list">
+            <li>B = valor inicial</li>
+            <li>b = valor final</li>
+            <li>h = distancia entre puntos</li>
+          </ul>
+        </div>
+
+        <div class="trap-card">
+          <h3>Ejemplo Real</h3>
+
+          <p>Si el CPU registra:</p>
+
+          <div class="code-block">[1, 2, 3, 2, 1]</div>
+
+          <p>
+            El sistema calcula automáticamente las áreas entre cada punto y
+            obtiene una aproximación total:
+          </p>
+
+          <div class="formula-box">Integral ≈ 8</div>
+
+          <p>
+            Este resultado representa la carga acumulada total del procesador
+            durante el intervalo analizado.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="installation-section" id="instalacion">
+      <div class="title">
+        <h2>Instalación y Ejecución</h2>
+
+        <p>
+          Para ejecutar correctamente el proyecto es necesario contar con Python
+          instalado en el sistema operativo. El proyecto fue desarrollado en
+          Python y utiliza librerías externas para el análisis matemático,
+          monitoreo del CPU y generación de gráficas.
+        </p>
+      </div>
+
+      <div class="install-grid">
+        <div class="install-card">
+          <div class="install-icon">
+            <img src="resources/img/python.png" alt="Python Logo" />
+          </div>
+
+          <h3>Instalar Python</h3>
+
+          <p>
+            Descarga Python desde la página oficial o utiliza los instaladores
+            incluidos dentro de la carpeta Extras del proyecto.
+          </p>
+
+          <a
+            href="https://www.python.org/downloads/"
+            target="_blank"
+            class="install-btn"
+          >
+            Página Oficial de Python
+          </a>
+        </div>
+
+        <div class="install-card">
+          <div class="install-icon">
+            <img src="resources/img/WinRAR_icon.svg.png" alt="Extras" />
+          </div>
+
+          <h3>Instaladores Incluidos</h3>
+
+          <p>
+            El archivo Extras incluye instaladores para sistemas de 32 y 64
+            bits, permitiendo ejecutar el proyecto incluso sin descargar Python
+            manualmente.
+          </p>
+
+          <a
+            href="./files/extras.zip"
+            download="extras.zip"
+            class="install-btn secondary-btn"
+          >
+            Descargar Extras
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="download-process-section" id="proceso">
+      <div class="title">
+        <h2>Proceso de Descarga y Uso</h2>
+
+        <p>
+          Sigue los siguientes pasos para descargar y ejecutar correctamente el
+          sistema de análisis y optimización del CPU mediante integrales.
+        </p>
+      </div>
+
+      <div class="process-container">
+        <div class="process-step">
+          <div class="step-number">01</div>
+
+          <div class="step-content">
+            <h3>Descargar el Proyecto</h3>
+
+            <p>
+              Descarga el archivo principal del proyecto en formato ZIP desde el
+              botón de descargas.
+            </p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">02</div>
+
+          <div class="step-content">
+            <h3>Extraer los Archivos</h3>
+
+            <p>
+              Extrae el contenido del archivo ZIP en cualquier carpeta del
+              sistema.
+            </p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">03</div>
+
+          <div class="step-content">
+            <h3>Instalar Dependencias</h3>
+
+            <p>
+              Instala las librerías necesarias utilizando pip install o utiliza
+              los instaladores incluidos en la carpeta Extras.
+            </p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">04</div>
+
+          <div class="step-content">
+            <h3>Ejecutar el Sistema</h3>
+
+            <p>
+              Abre CMD dentro de la carpeta del proyecto y ejecuta el archivo
+              principal utilizando Python.
+            </p>
+
+            <div class="cmd-box">python analisis_cpu_integrales.py</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="requirements-section">
+      <div class="requirements-box">
+        <h2>Requisitos del Sistema</h2>
+
+        <div class="requirements-grid">
+          <div class="requirement-item">
+            <img src="resources/img/windows.png" alt="Windows" />
+            <h3>Sistema Operativo</h3>
+            <p>Windows 10 o superior</p>
+          </div>
+
+          <div class="requirement-item">
+            <img src="resources/img/python.png" alt="Python" />
+            <h3>Python</h3>
+            <p>Python 3.10 o superior</p>
+          </div>
+
+          <div class="requirement-item">
+            <img src="resources/img/terminal.png" alt="CMD" />
+            <h3>CMD o Terminal</h3>
+            <p>Acceso a consola para ejecutar el proyecto</p>
+          </div>
+
+          <div class="requirement-item">
+            <img src="resources/img/numpy-tutorial.svg" alt="Libraries" />
+            <h3>Librerías</h3>
+            <p>numpy, matplotlib y psutil</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="project" id="proyecto">
+      <div class="title">
+        <h2>Sobre el Proyecto</h2>
+
+        <p>
+          El sistema obtiene datos reales del computador y calcula la carga
+          acumulada del procesador utilizando integrales y el método del
+          trapecio.
+        </p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Monitoreo</h3>
+
+          <p>
+            Obtención del porcentaje del CPU segundo por segundo mediante la
+            librería psutil.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Integración Numérica</h3>
+
+          <p>Cálculo del área bajo la curva utilizando numpy.trapezoid().</p>
+        </div>
+
+        <div class="card">
+          <h3>Visualización</h3>
+
+          <p>
+            Dashboard moderno con gráficas dinámicas y métricas del sistema.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="galeria">
+      <div class="title">
+        <h2>Resultados del Sistema</h2>
+
+        <p>
+          Visualización del comportamiento del procesador durante la ejecución
+          del sistema de monitoreo mediante integrales y análisis numérico.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="./resources/img/analisis.png" alt="Prueba CPU" />
+
+          <div class="gallery-content">
+            <h3>Monitoreo en Tiempo Real</h3>
+
+            <p>
+              Visualización del porcentaje de uso del CPU obtenido mediante la
+              librería psutil y procesado utilizando integración numérica.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="./resources/img/grafica.png" alt="Gráfica Integral" />
+
+          <div class="gallery-content">
+            <h3>Gráfica de Integrales</h3>
+
+            <p>
+              Representación gráfica del área bajo la curva utilizando la regla
+              del trapecio implementada con numpy.trapezoid().
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="./resources/img/uso5.png" alt="Resultados" />
+
+          <div class="gallery-content">
+            <h3>Resultados del Análisis</h3>
+
+            <p>
+              Datos acumulados del comportamiento del sistema y análisis de
+              carga del procesador durante el intervalo de tiempo observado.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="errors-section" id="errores">
+      <div class="title">
+        <h2>Principales Errores Comunes</h2>
+
+        <p>
+          Problemas frecuentes durante la instalación, ejecución y visualización
+          del proyecto Integrales CPU y cómo solucionarlos correctamente.
+        </p>
+      </div>
+
+      <div class="errors-grid">
+        <div class="error-card">
+          <div class="error-top">
+            <span>01</span>
+            <h3>Python no reconocido</h3>
+          </div>
+
+          <p>
+            El sistema muestra el mensaje:
+            <strong>"python no se reconoce como un comando"</strong>.
+          </p>
+
+          <div class="solution-box">
+            <h4>Solución</h4>
+
+            <p>
+              Instalar Python correctamente y activar la opción
+              <strong>"Add Python to PATH"</strong> durante la instalación.
+            </p>
+          </div>
+        </div>
+
+        <div class="error-card">
+          <div class="error-top">
+            <span>02</span>
+            <h3>Faltan librerías</h3>
+          </div>
+
+          <p>Error relacionado con módulos como numpy, matplotlib o psutil.</p>
+
+          <div class="solution-box">
+            <h4>Solución</h4>
+
+            <div class="cmd-error">pip install numpy matplotlib psutil</div>
+          </div>
+        </div>
+
+        <div class="error-card">
+          <div class="error-top">
+            <span>03</span>
+            <h3>La página no carga estilos</h3>
+          </div>
+
+          <p>GitHub Pages muestra la página sin CSS o sin diseño visual.</p>
+
+          <div class="solution-box">
+            <h4>Solución</h4>
+
+            <p>
+              Verificar que las rutas estén correctamente escritas:
+              <strong>./css/global.css</strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="error-card">
+          <div class="error-top">
+            <span>04</span>
+            <h3>Error al descargar archivos</h3>
+          </div>
+
+          <p>
+            El navegador abre el archivo en otra pestaña en lugar de
+            descargarlo.
+          </p>
+
+          <div class="solution-box">
+            <h4>Solución</h4>
+
+            <p>
+              Comprimir el archivo .py dentro de un archivo .zip y utilizar el
+              atributo <strong>download</strong> en el enlace HTML.
+            </p>
+          </div>
+        </div>
+
+        <div class="error-card">
+          <div class="error-top">
+            <span>05</span>
+            <h3>GitHub Pages no actualiza</h3>
+          </div>
+
+          <p>
+            Los cambios realizados no aparecen inmediatamente en la página web.
+          </p>
+
+          <div class="solution-box">
+            <h4>Solución</h4>
+
+            <p>
+              Esperar algunos minutos, limpiar caché del navegador o usar Ctrl +
+              Shift + R.
+            </p>
+          </div>
+        </div>
+
+        <div class="error-card">
+          <div class="error-top">
+            <span>06</span>
+            <h3>Error de rutas de imágenes</h3>
+          </div>
+
+          <p>Las imágenes o logos no aparecen correctamente en GitHub Pages.</p>
+
+          <div class="solution-box">
+            <h4>Solución</h4>
+
+            <p>
+              Verificar que los archivos estén dentro de:
+              <strong>./resources/img/</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="downloads" id="descargas">
+      <div class="download-box">
+        <h2>Descargas</h2>
+
+        <p>Descarga el proyecto completo y los archivos adicionales.</p>
+
+        <div class="download-buttons">
+          <a
+            href="./files/analisis_cpu_integrales.zip"
+            download="analisis_cpu_integrales.zip"
+            class="btn-primary"
+          >
+            Descargar Proyecto
+          </a>
+
+          <a
+            href="./files/extras.zip"
+            download="extras.zip"
+            class="btn-secondary"
+          >
+            Descargar ZIP
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="team-section" id="integrantes">
+      <div class="title">
+        <h2>Integrantes del Proyecto</h2>
+        <p>
+          Equipo encargado del desarrollo, análisis matemático, programación y
+          documentación del sistema de monitoreo y optimización de CPU mediante
+          integrales.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-glow"></div>
+          <h3>Alan González Merlano</h3>
+          <span>Desarrollador Principal</span>
+          <p>
+            Encargado de la lógica matemática, integración numérica y desarrollo
+            principal del sistema.
+          </p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-glow"></div>
+          <h3>Andrés Felipe Mojarrango Silgado</h3>
+          <span>Documentación</span>
+          <p>
+            Responsable del análisis teórico, redacción y estructura del
+            proyecto.
+          </p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-glow"></div>
+          <h3>Dylan Andrés Mercado Mercado</h3>
+          <span>Visualización y Testing</span>
+          <p>
+            Encargado de pruebas, validación del sistema y análisis visual de
+            resultados.
+          </p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-glow"></div>
+          <h3>Abisaí Villadiego Leguia</h3>
+          <span>Investigación</span>
+          <p>
+            Apoyo en investigación, recopilación de información y validación
+            conceptual.
+          </p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-glow"></div>
+          <h3>Jorge Alejandro Castillo Paternina</h3>
+          <span>Soporte del Proyecto</span>
+          <p>
+            Colaboración en organización, ideas de implementación y estructura
+            general del sistema.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div class="contact-container">
+        <div class="title">
+          <h2>Contacto</h2>
+          <p>
+            Para información adicional, documentación técnica o soporte
+            relacionado con el proyecto.
+          </p>
+        </div>
+
+        <div class="contact-box">
+          <div class="contact-item">
+            <h3>Correo</h3>
+
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=integralescpu.project@gmail.com"
+              target="_blank"
+              class="contact-link"
+            >
+              integralescpu.project@gmail.com
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <h3>Número de Contacto</h3>
+
+            <a
+              href="https://wa.me/573216419481"
+              target="_blank"
+              class="contact-link"
+            >
+              +57 321 6419481
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <h3>Ubicación</h3>
+            <p>Sincelejo, Sucre - Colombia</p>
+          </div>
+
+          <div class="contact-item">
+            <h3>Proyecto</h3>
+            <p>Análisis y Optimización del CPU mediante Integrales</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Proyecto Integrales CPU - Ingeniería de Sistemas</p>
+    </footer>
+
+    <script src="js/funcionalidad.js"></script>
+  </body>
+</html>
